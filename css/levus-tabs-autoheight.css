@@ -1,0 +1,58 @@
+*,::after,::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    padding: 100px;
+    font-family: sans-serif;
+}
+
+p{
+    margin: 10px 0 20px;
+}
+
+/* levus tabs autoheight */
+.levus-tabs-autoheight{
+    width: 900px;
+    margin: auto;
+    
+    /**/
+    border: 1px solid greenyellow;
+}
+
+@media(max-width: 960px) {
+    .levus-tabs-autoheight{
+        width: 95%;
+    }
+}
+
+.levus-tabs-autoheight .header{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background: ghostwhite;
+    border-bottom: 1px solid greenyellow;
+}
+
+.levus-tabs-autoheight .header span{
+    cursor: pointer;
+}
+
+.levus-tabs-autoheight .header span.active{
+    color: red;
+}
+
+.levus-tabs-autoheight .content{
+    overflow: hidden;
+}
+
+.levus-tabs-autoheight .panes{
+    display: grid;
+}
+
+.levus-tabs-autoheight .panes .pane{
+    width: 100%;
+    padding: 10px;
+}
