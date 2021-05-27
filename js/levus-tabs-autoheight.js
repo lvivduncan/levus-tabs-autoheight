@@ -5,7 +5,6 @@ const pane = document.querySelectorAll('.levus-tabs-autoheight .pane');
 // quantity
 const count = document.querySelector('.panes').childElementCount;
 
-
 const panes = document.querySelector('.levus-tabs-autoheight .panes');
 panes.style.width = `${100 * count}%`;
 panes.style.gridTemplateColumns = `repeat(${count}, 1fr)`;
@@ -26,3 +25,6 @@ buttons.forEach((item,index) => {
     });
 
 });
+
+// todo: кілька вкладок на сторінці
+// todo: відключення на мобільних екранах
